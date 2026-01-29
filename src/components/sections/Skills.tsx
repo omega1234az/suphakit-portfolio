@@ -11,7 +11,7 @@ const skills = {
 
 export function Skills() {
     return (
-        <section id="skills" className="py-24 bg-muted/50">
+        <section id="skills" className="py-24 bg-slate-50/30">
             <div className="container px-4 md:px-6">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -20,8 +20,8 @@ export function Skills() {
                     transition={{ duration: 0.5 }}
                     className="text-center mb-12"
                 >
-                    <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Technical Skills</h2>
-                    <p className="mt-4 text-muted-foreground md:text-lg">
+                    <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-slate-700">Technical Skills</h2>
+                    <p className="mt-4 text-slate-600 md:text-lg">
                         A comprehensive list of technologies I work with.
                     </p>
                 </motion.div>
@@ -35,14 +35,14 @@ export function Skills() {
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1, duration: 0.5 }}
                         >
-                            <Card className="h-full hover:shadow-lg transition-shadow">
+                            <Card className="h-full hover:shadow-md transition-shadow border-slate-200/60 bg-white">
                                 <CardHeader>
-                                    <CardTitle className="text-lg">{category}</CardTitle>
+                                    <CardTitle className="text-lg text-slate-700">{category}</CardTitle>
                                 </CardHeader>
                                 <CardContent>
                                     <div className="flex flex-wrap gap-2">
                                         {items.map((item) => (
-                                            <Badge key={item} variant="secondary" className="hover:bg-secondary/80">
+                                            <Badge key={item} variant="secondary" className="bg-indigo-50 text-indigo-700 hover:bg-indigo-100 border-indigo-100">
                                                 {item}
                                             </Badge>
                                         ))}

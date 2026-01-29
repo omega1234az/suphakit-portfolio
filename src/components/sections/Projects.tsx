@@ -1,7 +1,7 @@
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { Github, ExternalLink } from "lucide-react"
+import { Github } from "lucide-react"
 import { motion } from "framer-motion"
 
 const projects = [
@@ -33,7 +33,7 @@ const projects = [
 
 export function Projects() {
     return (
-        <section id="projects" className="py-24">
+        <section id="projects" className="py-24 bg-white">
             <div className="container px-4 md:px-6">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -42,8 +42,8 @@ export function Projects() {
                     transition={{ duration: 0.5 }}
                     className="text-center mb-12"
                 >
-                    <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Featured Projects</h2>
-                    <p className="mt-4 text-muted-foreground md:text-lg">
+                    <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-slate-700">Featured Projects</h2>
+                    <p className="mt-4 text-slate-600 md:text-lg">
                         Check out some of my recent work from GitHub.
                     </p>
                 </motion.div>
@@ -57,21 +57,21 @@ export function Projects() {
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1, duration: 0.5 }}
                         >
-                            <Card className="h-full flex flex-col hover:border-primary/50 transition-colors">
+                            <Card className="h-full flex flex-col hover:border-indigo-200 hover:shadow-md transition-all duration-300 border-slate-200/60 bg-white">
                                 <CardHeader>
-                                    <CardTitle>{project.title}</CardTitle>
+                                    <CardTitle className="text-slate-700">{project.title}</CardTitle>
                                 </CardHeader>
                                 <CardContent className="flex-1">
-                                    <p className="text-muted-foreground mb-4">{project.description}</p>
+                                    <p className="text-slate-600 mb-4">{project.description}</p>
                                     <div className="flex flex-wrap gap-2">
                                         {project.tags.map((tag) => (
-                                            <Badge key={tag} variant="outline">{tag}</Badge>
+                                            <Badge key={tag} variant="outline" className="border-slate-200 text-slate-600">{tag}</Badge>
                                         ))}
                                     </div>
                                 </CardContent>
                                 <CardFooter className="flex gap-2">
                                     <a href={project.link} target="_blank" rel="noopener noreferrer" className="w-full">
-                                        <Button className="w-full" variant="outline">
+                                        <Button className="w-full bg-indigo-500 hover:bg-indigo-600 text-white" variant="default">
                                             <Github className="mr-2 h-4 w-4" />
                                             View Code
                                         </Button>
