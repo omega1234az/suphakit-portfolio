@@ -1,69 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 47% 11%;
-
-    --muted: 220 13% 97%;
-    --muted-foreground: 220 9% 46%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 47% 11%;
+    /* Cyber-Daylight v2 (Softer) */
+    --background: 220 20% 97%;
+    /* Soft Cloud White */
+    --foreground: 222 47% 11%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 47% 11%;
+    --card-foreground: 222 47% 11%;
 
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
 
-    --primary: 250 30% 65%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 262 83% 58%;
+    --primary-foreground: 210 40% 98%;
 
-    --secondary: 220 13% 97%;
-    --secondary-foreground: 220 9% 46%;
+    --secondary: 210 40% 93%;
+    /* Darker secondary for contrast */
+    --secondary-foreground: 222 47% 11.2%;
 
-    --accent: 220 13% 97%;
-    --accent-foreground: 220 9% 46%;
+    --muted: 210 40% 93%;
+    --muted-foreground: 215.4 16.3% 46.9%;
 
-    --destructive: 0 84% 60%;
+    --accent: 262 83% 58%;
+    --accent-foreground: 222 47% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --ring: 250 30% 65%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 262 83% 58%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
   }
 
   .dark {
-    --background: 224 71% 4%;
-    --foreground: 213 31% 91%;
+    /* Digital Noir Theme */
+    --background: 240 10% 4%;
+    /* Deep Void */
+    --foreground: 210 40% 98%;
 
-    --muted: 223 47% 11%;
-    --muted-foreground: 215.4 16.3% 56%;
+    --card: 240 10% 5%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 224 71% 4%;
-    --popover-foreground: 213 31% 91%;
+    --popover: 240 10% 4%;
+    --popover-foreground: 210 40% 98%;
 
-    --card: 224 71% 4%;
-    --card-foreground: 213 31% 91%;
-
-    --border: 216 34% 17%;
-    --input: 216 34% 17%;
-
-    --primary: 263 70% 50%;
+    --primary: 263 70% 60%;
+    /* Neon Violet */
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 222 47% 11%;
-    --secondary-foreground: 213 31% 91%;
+    --secondary: 240 4% 16%;
+    --secondary-foreground: 210 40% 98%;
 
-    --accent: 222 47% 11%;
-    --accent-foreground: 213 31% 91%;
+    --muted: 240 4% 16%;
+    --muted-foreground: 215 20% 65%;
 
-    --destructive: 0 63% 31%;
+    --accent: 280 80% 60%;
+    /* Electric Purple */
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
+    --border: 240 4% 20%;
+    --input: 240 4% 20%;
     --ring: 263 70% 50%;
   }
 }
