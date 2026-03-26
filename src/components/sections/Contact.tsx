@@ -19,7 +19,7 @@ export function Contact() {
                         <a href="tel:0956798405">
                             <Button variant="outline" size="lg" className="rounded-full h-12 px-6 bg-background/50 backdrop-blur-sm border-foreground/10 hover:bg-primary/10 hover:text-primary hover:border-primary/50 transition-all duration-300">
                                 <Phone className="mr-2 h-4 w-4" />
-                                095-679-8405
+                                ++ 095-679-8405 ++
                             </Button>
                         </a>
                     </div>
