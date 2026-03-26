@@ -1,4 +1,4 @@
-import { Github, Mail, Linkedin, Facebook, Phone } from "lucide-react"
+import { Github, Mail, Facebook, Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export function Contact() {
